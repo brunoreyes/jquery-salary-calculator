@@ -20,19 +20,22 @@
                 <input type="number" placeholder="ID" id="idInput" alt="id input">
                 <input type="text" placeholder="Title" id="titleInput" alt="title input">
                 <input type="number" placeholder="Annual Salary" id="annualSalaryInput" alt="annual salary input">
-                <button type="submit" id="submitButton">Submit</button>
+                <button type="button" id="addInfoButton">Submit</button>
             </div>
             <div id="tableContainer">
                 <p id="subHeader">Employees</p>
                 <table style="width:100%">
+
                     <tr>
-                        <th class="firstNameColumn">Firstname</th>
-                        <th class="lastNameColumn">Lastname</th>
+                        <th class="firstNameColumn">First Name</th>
+                        <th class="lastNameColumn">Last Name</th>
                         <th class="idColumn">ID</th>
                         <th class="titleColumn">Title</th>
                         <th class="annualSalaryColumn">Annual Salary</th>
                         <th class="deleteColumn"></th>
                     </tr>
+                </table>
+                <table style="width:100%">
                     <tr>
                         <td class="firstNameColumn">Jill</td>
                         <td class="lastNameColumn">Smith</td>
@@ -57,6 +60,7 @@
                         <td class="annualSalaryColumn">$100,000</td>
                         <td class="deleteColumn"><button id="deleteButton">Delete</button></td>
                     </tr>
+                    <span id="employeeInfoOutput"></span>
                     <tr>
                         <td id="leftBox"></td>
                         <td id="centerBox"></td>
