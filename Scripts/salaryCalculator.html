@@ -8,7 +8,69 @@
 </head>
 
 <body>
-    <h1>Hello World!</h1>
+    <div id="allContainer">
+        <header>
+            <p>Salary Calculator</p>
+        </header>
+        <main>
+            <div id="formContainer">
+                <p id="subHeader">Add Employee</p>
+                <input type="text" placeholder="First Name" id="firstNameInput" alt="first name input">
+                <input type="text" placeholder="Last Name" id="lastNameInput" alt="last name input">
+                <input type="number" placeholder="ID" id="idInput" alt="id input">
+                <input type="text" placeholder="Title" id="titleInput" alt="title input">
+                <input type="number" placeholder="Annual Salary" id="annualSalaryInput" alt="annual salary input">
+                <button type="submit" id="submitButton">Submit</button>
+            </div>
+            <div id="tableContainer">
+                <p id="subHeader">Employees</p>
+                <table style="width:100%">
+                    <tr>
+                        <th class="firstNameColumn">Firstname</th>
+                        <th class="lastNameColumn">Lastname</th>
+                        <th class="idColumn">ID</th>
+                        <th class="titleColumn">Title</th>
+                        <th class="annualSalaryColumn">Annual Salary</th>
+                        <th class="deleteColumn"></th>
+                    </tr>
+                    <tr>
+                        <td class="firstNameColumn">Jill</td>
+                        <td class="lastNameColumn">Smith</td>
+                        <td class="idColumn">50</td>
+                        <td class="titleColumn">Team Lead</td>
+                        <td class="annualSalaryColumn">$100,000</td>
+                        <td class="deleteColumn"><button id="deleteButton">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td class="firstNameColumn">Jill</td>
+                        <td class="lastNameColumn">Smith</td>
+                        <td class="idColumn">50</td>
+                        <td class="titleColumn">Team Lead</td>
+                        <td class="annualSalaryColumn">$100,000</td>
+                        <td class="deleteColumn"><button id="deleteButton">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td class="firstNameColumn">Jill</td>
+                        <td class="lastNameColumn">Smith</td>
+                        <td class="idColumn">50</td>
+                        <td class="titleColumn">Team Lead</td>
+                        <td class="annualSalaryColumn">$100,000</td>
+                        <td class="deleteColumn"><button id="deleteButton">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td id="leftBox"></td>
+                        <td id="centerBox"></td>
+                        <td id="centerBox"></td>
+                        <td id="centerBox"></td>
+                        <td id="centerBox"></td>
+                        <td id="rightBox"></td>
+                    </tr>
+                </table>
+            </div>
+            <p id="totalMonthly">Total Monthly:<span id="totalMonthlyNumber"></span></p>
+    </div>
+
+    </main>
 </body>
 <link rel="stylesheet" href="/Style Sheets/salaryCalculator.css">
 <script src="jquery-3.5.1.min.js"></script>

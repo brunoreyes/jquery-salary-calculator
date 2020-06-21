@@ -1,4 +1,112 @@
+header {
+    text-align: center;
+    background-color: #6b6b6b;
+    color:white;
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
 body {
     /* background-color: blue; */
     font-family: Arial, Helvetica, sans-serif;
 }
+#allContainer {
+    border: #000000;
+    border-width: .05em;
+    border-style: solid;
+    margin: 4px;
+}
+#subHeader{
+    margin-bottom: .5em;
+    padding-left: 1px;
+    font-size: 20px;
+}
+#formContainer {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+input {
+    margin: 4px;
+    margin-left: 0px;
+    border-radius: 0px;
+    border-style: solid ;
+    border-color: black;
+    border-width: .11em;
+    padding: 3px;
+}
+button {
+    padding: 3px 20px;
+    margin: 5px;
+    border-color: black;
+    border-radius: 5px;
+    border-width: 1px;
+}
+#tableContainer {
+    margin-top: 1em;
+    margin: auto;
+    padding: 10px;
+
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 6px 10px 6px 10px;
+    /* padding: 6px; */
+    margin-right: 10px;
+}
+th {
+    font-weight: 100;
+    background-color: #d2d2d2;
+}
+tr:nth-child(odd) {
+    background-color: #efefef;
+}
+#leftBox{
+border-right: 0px;
+background-color: #efefef
+}
+#centerBox{
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #efefef
+}
+#rightBox{
+    border-left: 0px;
+    padding-top: 17px;
+    background-color: #efefef;
+}
+#underDeleteBox{
+    border-left: 0px;
+}
+#totalMonthly{
+    text-align: end;
+    padding: 10px;
+}
+.firstNameColumn{
+    text-align: left;
+    padding-right: 20px;
+
+}
+.lastNameColumn{
+    text-align: left;
+    padding-right: 20px;
+
+}
+.idColumn{
+    text-align: left;
+    padding-right: 20px;
+}
+.titleColumn{
+    text-align: left;
+    padding-right: 20px;
+
+}
+.annualSalaryColumn{
+    text-align: right;
+    padding-right: 20px;
+
+}
+.deleteColumn{
+    text-align: center;
+}
+
