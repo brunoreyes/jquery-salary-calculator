@@ -33,6 +33,6 @@ this employee's removal. This will require that the logic knows which element wa
 
 ## Screen Shot
 
-![Alt text](/Screen Shot of Salary Calculator.png?raw=true "Optional Title")Screen Shot of Salary Calculator.png
+![Alt text](https://Users/brunoreyes/Desktop/Prime/Tier2/w7/jquery-salary-calculator/Screen Shot of Salary Calculator.png)
 
 ## Prerequisites
