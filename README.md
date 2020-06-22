@@ -33,8 +33,7 @@ this employee's removal. This will require that the logic knows which element wa
 
 ## Screen Shot
 
-![Image](Screen-Shot-of-Salary-Calculator.png)
-
+![alt text](Screen-Shot-of-Salary-Calculator.png)
 ## Prerequisites
 
 No requirements at this time.
