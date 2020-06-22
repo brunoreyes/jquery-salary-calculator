@@ -33,7 +33,7 @@ this employee's removal. This will require that the logic knows which element wa
 
 ## Screen Shot
 
-![alt text](https://raw.githubusercontent.com/brunoreyes/jquery-salary-calculator/master/Screen%20Shot%20of%20Salary%20Calculator.png)
+![Salary Calculator](https://raw.githubusercontent.com/brunoreyes/jquery-salary-calculator/master/Screen%20Shot%20of%20Salary%20Calculator.png)
 
 ## Prerequisites
 No requirements at this time.
