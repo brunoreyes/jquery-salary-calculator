@@ -81,9 +81,6 @@ table{
 tr:nth-child(even) {
     background-color: #efefef;
 }
-.bottomRow {
-    background-color: #efefef;
-}
 #totalMonthly{
     text-align: end;
     padding: 10px;

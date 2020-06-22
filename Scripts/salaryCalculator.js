@@ -18,9 +18,8 @@ function onReady() {
 
     //when id: addInfoButton is clicked we addEmployeeInfo
     $('#addInfoButton').on('click', addEmployeeInfo);
-    $('#employeeTable').on('click', '#deleteButton', removeMe);
+    $('table').on('click', '#deleteButton', removeMe);
     displayEmployeeInfo();
-    // addClickDelete();
 
 };//end readyNow
 
@@ -45,18 +44,9 @@ console.log(newEmployeeData('Al', `Pacino`, 1000, 'Actor', 2000000));
 console.log(newEmployeeData('Bruno', 'Reyes', 1494, 'Developer', 16000));
 console.log(employeeInfo);
 
-function addClickDelete() {
-    // console.log(`in addClickDelete: giving div onClick removeMe, ensuring only 1 onClick`);
-    // $('#deleteButton').off('click');
-    $('#deleteButton').on("click", removeMe);
-
-}//end addClickDelete
-
 function removeMe() {
-
     $(this).closest('tr').remove();
-
-}
+}//end removeMe
 
 function addEmployeeInfo() {
     //You can only change the value of classes
@@ -92,7 +82,6 @@ function totalMonthlySalary() {
     SalaryColor(totalValue)
     // let convertedMonthlySalary = (new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 2 }).format(totalValue));
     // $(`#totalMonthlySalary`).append(`` + convertedMonthlySalary + ``)
-
 }//end totalMonthlySalary
 
 function SalaryColor(totalValue) {
@@ -104,24 +93,3 @@ function SalaryColor(totalValue) {
         $('#totalMonthlySalary').text(`$${totalValue}`);
     }
 }
-
-
-
-// [X] The application should have an input form that collects
-//  _employee first name, last name, ID number, job title, annual salary_.
-
-// [X] A 'Submit' button should collect the form information, store the
-// information to calculate monthly costs, append information to the DOM and clear the input fields. 
-
-// [X] Using the stored information, calculate monthly costs and append this
-// to the to DOM. If the total monthly cost exceeds $20,000, add a red background color to the total monthly cost.
-
-// [] Create a delete button that removes an employee from the DOM. For Base
-// mode, it does **not** need to remove that Employee's salary from the reported total.
-
-// ## Stretch Mode
-
-// [X] Add styling or extra functionality that fits with the theme of this assignment.
-
-// [] Once the employee is deleted, update the total spend on salaries account for 
-//this employee's removal. This will require that the logic knows which element was removed. You will need to use `.text()` as a getter or look into jQuery's `.data()` function. This is tricky!
