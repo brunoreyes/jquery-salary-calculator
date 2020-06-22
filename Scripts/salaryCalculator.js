@@ -66,7 +66,7 @@ function displayEmployeeInfo() {
             <td id="lastNameColumn">${employeeObject.lastName}</td>
             <td id="idColumn">${employeeObject.id}</td>
             <td id="titleColumn">${employeeObject.title}</td>
-            <td id="annualSalaryColumn">${employeeObject.annualSalary}</td>
+            <td id="annualSalaryColumn">$${employeeObject.annualSalary}</td>
             <td id="deleteColumn"><button id="deleteButton">Delete</button></td></tr>`);
         // here I'm creating a table row filled with info of each employee
     }// end for 
