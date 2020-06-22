@@ -18,8 +18,9 @@ function onReady() {
 
     //when id: addInfoButton is clicked we addEmployeeInfo
     $('#addInfoButton').on('click', addEmployeeInfo);
-
+    $('#employeeTable').on('click', '#deleteButton', removeMe);
     displayEmployeeInfo();
+    // addClickDelete();
 
 };//end readyNow
 
@@ -44,6 +45,18 @@ console.log(newEmployeeData('Al', `Pacino`, 1000, 'Actor', 2000000));
 console.log(newEmployeeData('Bruno', 'Reyes', 1494, 'Developer', 16000));
 console.log(employeeInfo);
 
+function addClickDelete() {
+    // console.log(`in addClickDelete: giving div onClick removeMe, ensuring only 1 onClick`);
+    // $('#deleteButton').off('click');
+    $('#deleteButton').on("click", removeMe);
+
+}//end addClickDelete
+
+function removeMe() {
+
+    $(this).closest('tr').remove();
+
+}
 
 function addEmployeeInfo() {
     //You can only change the value of classes
@@ -60,7 +73,7 @@ function addEmployeeInfo() {
 function displayEmployeeInfo() {
     $('#employeeInfoOutput').empty();
     for (employeeObject of employeeInfo) {
-        $('#employeeInfoOutput').append(`<tr><td class="firstNameColumn">` + employeeObject.firstName + `</td>` +
+        $('#employeeInfoOutput').append(`<tr class="row"><td class="firstNameColumn">` + employeeObject.firstName + `</td>` +
             `<td id="lastNameColumn">` + employeeObject.lastName + `</td>` +
             `<td id="idColumn">` + employeeObject.id + `</td>` +
             `<td id="titleColumn">` + employeeObject.title + `</td>` +
