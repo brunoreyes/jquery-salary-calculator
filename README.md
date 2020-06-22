@@ -33,9 +33,9 @@ this employee's removal. This will require that the logic knows which element wa
 
 ## Screen Shot
 
-![alt text](Screen Shot of Salary Calculator.png)
-## Prerequisites
+![alt text](Screen-Shot-of-Salary-Calculator.png?raw =true "Title")
 
+## Prerequisites
 No requirements at this time.
 
 ## Usage
