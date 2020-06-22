@@ -5,6 +5,8 @@ header {
     font-size: 30px;
     padding: 10px;
     margin-bottom: 10px;
+    border-bottom:.05px solid #000000;
+
 }
 body {
     /* background-color: blue; */
@@ -18,7 +20,7 @@ body {
 }
 #subHeader{
     margin-bottom: .5em;
-    padding-left: 1px;
+    padding-left: 10px;
     font-size: 20px;
 }
 #formContainer {
@@ -41,89 +43,71 @@ button {
     border-radius: 5px;
     border-width: 1px;
 }
+#fakeButton{
+    color: #d2d2d2;
+    background-color: #d2d2d2;
+    border: #d2d2d2;
+}
 #tableContainer {
     margin-top: 1em;
-    margin: auto;
-    padding: 10px;
+    margin: 10px;
+        border: #000000;
+        border-width: .05px;
+        border-style: solid;
 }
-table{
-    /* table-layout: fixed; */
-    width: 100% ;
-}
-table, th, td {
-    border: 1px solid black;
+table {
+    /* border: #000000;
+    border-width: .0005px;
+    border-style: solid; */
     border-collapse: collapse; 
     /* padding: 6px 10px 6px 10px; */
     /*         top right bottom left */
-    /* padding: 6px; */
-    /* margin-right: 10px; */
+    font-weight: 100;
 }
 th {
-    font-weight: 100;
     background-color: #d2d2d2;
+    width: 100px;
+    padding:8px;
+    font-weight: 100;
+    border-bottom:.05px solid #000000;
 }
-/* td {
+td {
+    width: 100px;
+    padding: 8px;
+}
+table{
     width: 100%;
-} */
-td { 
-    width: 33%; 
 }
-
 tr:nth-child(even) {
     background-color: #efefef;
 }
-#leftBox{
-border-right: 0px;
-}
-#centerBox{
-    border-left: 0px;
-    border-right: 0px;
-}
-#rightBox{
-    border-left: 0px;
-    padding-top: 17px;
-}
-#underDeleteBox{
-    border-left: 0px;
+.bottomRow {
+    background-color: #efefef;
 }
 #totalMonthly{
     text-align: end;
     padding: 10px;
 }
-.firstNameColumn{
+#firstNameColumn{
     text-align: left;
-    /* padding-right: 20px; */
-    width: 20%;
 }
-.lastNameColumn{
+#lastNameColumn{
     text-align: left;
-    /* padding-right: 20px; */
-    width: 20%;
-
 }
-.idColumn{
+#idColumn{
     text-align: left;
-    /* padding-right: 20px; */
-    width: 20%;
-
 }
-.titleColumn{
+#titleColumn{
     text-align: left;
-    /* padding-right: 20px; */
-    width: 20%;
-
-
 }
-.annualSalaryColumn{
+#annualSalaryColumn{
     text-align: right;
-    /* padding-right: 20px; */
-    width: 20%;
-
-
 }
-.deleteColumn{
+#deleteColumn{
     text-align: center;
-    width: 20%;
-
+}
+#totalMonthlySalaryRed{
+    background-color: red;
+    color: white;
 }
 

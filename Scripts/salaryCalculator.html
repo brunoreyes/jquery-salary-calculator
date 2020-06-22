@@ -13,8 +13,8 @@
             <p>Salary Calculator</p>
         </header>
         <main>
+            <p id="subHeader">Add Employee</p>
             <div id="formContainer">
-                <p id="subHeader">Add Employee</p>
                 <input type="text" placeholder="First Name" id="firstNameInput" alt="first name input">
                 <input type="text" placeholder="Last Name" id="lastNameInput" alt="last name input">
                 <input type="number" placeholder="ID" id="idInput" alt="id input">
@@ -22,56 +22,22 @@
                 <input type="number" placeholder="Annual Salary" id="annualSalaryInput" alt="annual salary input">
                 <button type="button" id="addInfoButton">Submit</button>
             </div>
+            <p id="subHeader">Employees</p>
             <div id="tableContainer">
-                <p id="subHeader">Employees</p>
-                <table style="width:100%">
-
+                <table>
                     <tr>
-                        <th class="firstNameColumn">First Name</th>
-                        <th class="lastNameColumn">Last Name</th>
-                        <th class="idColumn">ID</th>
-                        <th class="titleColumn">Title</th>
-                        <th class="annualSalaryColumn">Annual Salary</th>
-                        <th class="deleteColumn"></th>
+                        <th id="firstNameColumn">First Name</th>
+                        <th id="lastNameColumn">Last Name</th>
+                        <th id="idColumn">ID</th>
+                        <th id="titleColumn">Title</th>
+                        <th id="annualSalaryColumn">Annual Salary</th>
+                        <th id="deleteColumn"><button id="fakeButton" disabled>Delete</button></th>
                     </tr>
-                </table>
-                <table style="width:100%">
-                    <tr>
-                        <td class="firstNameColumn">Jill</td>
-                        <td class="lastNameColumn">Smith</td>
-                        <td class="idColumn">50</td>
-                        <td class="titleColumn">Team Lead</td>
-                        <td class="annualSalaryColumn">$100,000</td>
-                        <td class="deleteColumn"><button id="deleteButton">Delete</button></td>
-                    </tr>
-                    <tr>
-                        <td class="firstNameColumn">Jill</td>
-                        <td class="lastNameColumn">Smith</td>
-                        <td class="idColumn">50</td>
-                        <td class="titleColumn">Team Lead</td>
-                        <td class="annualSalaryColumn">$100,000</td>
-                        <td class="deleteColumn"><button id="deleteButton">Delete</button></td>
-                    </tr>
-                    <tr>
-                        <td class="firstNameColumn">Jill</td>
-                        <td class="lastNameColumn">Smith</td>
-                        <td class="idColumn">50</td>
-                        <td class="titleColumn">Team Lead</td>
-                        <td class="annualSalaryColumn">$100,000</td>
-                        <td class="deleteColumn"><button id="deleteButton">Delete</button></td>
-                    </tr>
-                    <span id="employeeInfoOutput"></span>
-                    <tr>
-                        <td id="leftBox"></td>
-                        <td id="centerBox"></td>
-                        <td id="centerBox"></td>
-                        <td id="centerBox"></td>
-                        <td id="centerBox"></td>
-                        <td id="rightBox"></td>
-                    </tr>
+                    <table id="employeeInfoOutput"></table>
                 </table>
             </div>
-            <p id="totalMonthly">Total Monthly:<span id="totalMonthlyNumber"></span></p>
+            <p id="totalMonthly">Total Monthly: <span id="totalMonthlySalary"></span><span
+                    id="totalMonthlySalaryRed"></span></p>
     </div>
 
     </main>
