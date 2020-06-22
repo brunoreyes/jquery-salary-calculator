@@ -33,6 +33,27 @@ this employee's removal. This will require that the logic knows which element wa
 
 ## Screen Shot
 
-![Alt text](https://Users/brunoreyes/Desktop/Prime/Tier2/w7/jquery-salary-calculator/Screen Shot of Salary Calculator.png)
+![Screen Shot](Screen-Shot-of-Salary-Calculator.png)
 
 ## Prerequisites
+
+No requirements at this time.
+
+## Usage
+1. Add employee info by inputting info, then press 'submit' button.
+2. Now you can see your added info within the table.
+3. Notice on the lower right there is a calculated monthly total of the annual salaries of all employees.
+
+## Built With
+-CSS!
+-HTML
+-jQuery
+-JavaScript
+
+## License
+
+No license at this time.
+
+## Acknowledgement
+Thank you to Robert Wolfe and Ross Hutchens for helping me with site functionality and styling
+## Support
