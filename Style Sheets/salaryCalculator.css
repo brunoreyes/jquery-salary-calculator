@@ -103,8 +103,5 @@ tr:nth-child(even) {
 #deleteColumn{
     text-align: center;
 }
-#totalMonthlySalaryRed{
-    background-color: red;
-    color: white;
-}
+
 

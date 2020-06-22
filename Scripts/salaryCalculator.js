@@ -34,7 +34,6 @@ function newEmployeeData(firstNameInput, lastNameInput, idInput, titleInput, ann
     }
     employeeInfo.push(newEmployeeDataObject);
     totalMonthlySalary()
-    return true;
 } // end newEmployeData
 
 console.log(`----------newEmployeeData() Test----------`);
@@ -63,33 +62,30 @@ function addEmployeeInfo() {
 function displayEmployeeInfo() {
     $('#employeeInfoOutput').empty();
     for (employeeObject of employeeInfo) {
-        $('#employeeInfoOutput').append(`<tr class="row"><td class="firstNameColumn">` + employeeObject.firstName + `</td>` +
-            `<td id="lastNameColumn">` + employeeObject.lastName + `</td>` +
-            `<td id="idColumn">` + employeeObject.id + `</td>` +
-            `<td id="titleColumn">` + employeeObject.title + `</td>` +
-            `<td id="annualSalaryColumn">` + employeeObject.annualSalary + `</td>` +
-            `<td id="deleteColumn"><button id="deleteButton">Delete</button></td></tr>`);
+        $('#employeeInfoOutput').append(`<tr class="row"><td class="firstNameColumn">${employeeObject.firstName}</td>
+            <td id="lastNameColumn">${employeeObject.lastName}</td>
+            <td id="idColumn">${employeeObject.id}</td>
+            <td id="titleColumn">${employeeObject.title}</td>
+            <td id="annualSalaryColumn">${employeeObject.annualSalary}</td>
+            <td id="deleteColumn"><button id="deleteButton">Delete</button></td></tr>`);
         // here I'm creating a table row filled with info of each employee
     }// end for 
 }//end displayEmployeeInfo
 
 function totalMonthlySalary() {
-    let totalValue = 0;
-    for (employeeObject of employeeInfo) {
-        totalValue += employeeObject.annualSalary;
+    let monthlySalary = 0;
+    for (employee of employeeInfo) {
+        monthlySalary += Math.round(employee.annualSalary / 12);
     }
-    console.log(totalValue)
-    SalaryColor(totalValue)
-    // let convertedMonthlySalary = (new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 2 }).format(totalValue));
-    // $(`#totalMonthlySalary`).append(`` + convertedMonthlySalary + ``)
-}//end totalMonthlySalary
-
-function SalaryColor(totalValue) {
-    if (totalValue > 20000) {
-        $('#totalMonthlySalaryRed').text(`$${totalValue}`);
-        return false
+    if (monthlySalary > 20000) {
+        $('#totalMonthlySalary').text(`$${monthlySalary}`);
+        $('#totalMonthlySalary').css(`background-color`, `red`);
+        $('#totalMonthlySalary').css(`color`, `white`);
     }
     else {
-        $('#totalMonthlySalary').text(`$${totalValue}`);
+        $('#totalMonthlySalary').text(`$${monthlySalary}`);
     }
-}
+    // let convertedMonthlySalary = (new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 2 }).format(totalValue));
+    // $(`#totalMonthlySalary`).append(`` + convertedMonthlySalary + ``)
+
+}//end totalMonthlySalary
